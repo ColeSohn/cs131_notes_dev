@@ -46,9 +46,10 @@ Below is an sample of images from the COCO detection challenge and their
 segmentations.
 
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/examples/coco.png">
+  <img src="{{ site.baseurl }}/assets/images/coco.png">
   <div class="figcaption">Sample images from COCO challenge</div>
 </div>
+
 ![Sample images from COCO challenge](coco.png "fig:") [fig:coco]
 
 Evaluation
@@ -62,7 +63,7 @@ positives** (TP), **false positives** (FP), and **false negatives**
     greater than 50%.
 
     <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/examples/truepos.png">
+      <img src="{{ site.baseurl }}/assets/images/truepos.png">
     </div>
     
     ![image](truepos.png)
@@ -71,14 +72,14 @@ positives** (TP), **false positives** (FP), and **false negatives**
     less than 50%
     
     <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/examples/falsepos.png">
+      <img src="{{ site.baseurl }}/assets/images/falsepos.png">
     </div>
     ![image](falsepos.png)
 
 3.  False Negative: The objects that our model fails to find.
 
     <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/examples/falseneg.png">
+      <img src="{{ site.baseurl }}/assets/images/falseneg.png">
     </div>
     ![image](falseneg.png)
 
@@ -90,6 +91,12 @@ positives** (TP), **false positives** (FP), and **false negatives**
 Using the definitions above, we can summarize them in a table. Three
 equivalent ways of displaying the combination of predictions and truth
 values with distinct terminology are shown below.
+
+<div class="fig figcenter fighighlight">
+  <img src="{{ site.baseurl }}/assets/images/table1">
+  <img src="{{ site.baseurl }}/assets/images/table2">
+  <img src="{{ site.baseurl }}/assets/images/table3">
+</div>
 
 ![Table of predictions and true values using full
 terminology](table1 "fig:") [fig:]
@@ -116,6 +123,11 @@ the model detect?
 ![Example precision and recall calculation](example calculation "fig:")
 [fig:]
 
+<div class="fig figcenter fighighlight">
+  <img src="{{ site.baseurl }}/assets/images/example calculation.jpg">
+  <div class="figcaption">Example Precision and Recall Calculation</div>
+</div>
+
 Precision $= \frac{TP}{TP + FP} = \frac{1}{1 + 2} = \frac{1}{3}$
 
 Recall $= \frac{TP}{TP + FN} = \frac{1}{1 + 1} = \frac{1}{2}$
@@ -127,6 +139,11 @@ Through varying threshold, we can vary precision and recall.
       <div class="figcaption">Example with Threshold of 0</div>
 </div>
 
+<div class="fig figcenter fighighlight">
+  <img src="{{ site.baseurl }}/assets/images/threshold0.png">
+  <div class="figcaption">Example with Threshold 0</div>
+</div>
+
 ![Example with threshold of 0](threshold0.png "fig:") [fig:]
 
 When using a threshold of 0, we get a precision of
@@ -135,7 +152,7 @@ We can improve our precision from the by adjusting our threshold to
 $0.5$ as shown in the example below.
 
 <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/examples/threshold0.5.png">
+      <img src="{{ site.baseurl }}/assets/images/threshold0.5.png">
       <div class="figcaption">Example with Threshold of 0.5</div>
 </div>
 
@@ -154,7 +171,7 @@ about varying threshold values - here we just take into account all
 threshold values instead!
 
 <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/examples/pcurve.png">
+      <img src="{{ site.baseurl }}/assets/images/pcurve.png">
 </div>
 ![Precision-recall Curve](prcurve.png "fig:") [fig:]
 
@@ -179,9 +196,9 @@ different algorithms and the predictions they make
 
 **Comparing Algorithms**
     
-    <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/examples/Screen Shot 2020-10-28 at 11.53.27 AM.png">
-    </div>
+<div class="fig figcenter fighighlight">
+  <img src="{{ site.baseurl }}/assets/images/Screen Shot 2020-10-28 at 11.53.27 AM.png">
+</div>
 
     ![image](Screen Shot 2020-10-28 at 11.53.27 AM.png)
 
@@ -224,7 +241,7 @@ that we are employing a more sophisticated template (this time we are
 basing it on HoG features).
 
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/examples/hogrecap.png">
+  <img src="{{ site.baseurl }}/assets/images/hogrecap.png">
   <div class="figcaption">Finding a HoG template for a given image of a person.</div>
 </div>
 
@@ -258,7 +275,7 @@ of the images. Below is a depiction about the creation of a feature
 pyramid.
 
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/examples/featurepyramid.png">
+  <img src="{{ site.baseurl }}/assets/images/featurepyramid.png">
   <div class="figcaption">From left to right: resolution pyramid, HoG pyramid, and Filter $F$</div>
 </div>
 
@@ -324,7 +341,7 @@ Deformable Parts Model
     resembles a face, as shown below:
 
     <div class="fig figcenter fighighlight">
-    <img src="{{ site.baseurl }}/assets/examples/deformable1.png">
+    <img src="{{ site.baseurl }}/assets/images/deformable1.png">
     <div class="figcaption">Deformable Parts Model of Human Face Connected by Springs</div>
     </div>
 
@@ -343,8 +360,8 @@ Deformable Parts Model
     arms, etc.
 
     <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/examples/deformable2.png">
-      <img src="{{ site.baseurl }}/assets/examples/deformable3.png">
+      <img src="{{ site.baseurl }}/assets/images/deformable2.png">
+      <img src="{{ site.baseurl }}/assets/images/deformable3.png">
       <div class="figcaption">Star Model and Star Model On a Person</div>
     </div>
 
@@ -359,7 +376,7 @@ Deformable Parts Model
     face.
 
     <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/examples/deformable4.png">
+      <img src="{{ site.baseurl }}/assets/images/deformable4.png">
       <div class="figcaption">Global Filter and an Example of a Part Filter of Human Body and Face</div>
     </div>
     
@@ -395,7 +412,7 @@ Deformable Parts Model
     expected center, the more cost it will incur.
     
     <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/examples/Deformation Model.jpg">
+      <img src="{{ site.baseurl }}/assets/images/Deformation Model.jpg">
       <div class="figcaption">Deformation Costs of a Standing Human</div>
     </div>
     
@@ -426,7 +443,7 @@ Deformable Parts Model
     ![HOG Pyramid Example](HOG Pyramid "fig:") [fig:]
     
     <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/examples/Hog Pyramid.jpg">
+      <img src="{{ site.baseurl }}/assets/images/Hog Pyramid.jpg">
       <div class="figcaption">HOG Pyramid Example</div>
     </div>
     
@@ -492,7 +509,7 @@ Deformable Parts Model
     sum of the deformation costs for each part.
 
     <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/examples/neel_equation.jpg">
+      <img src="{{ site.baseurl }}/assets/images/neel_equation.jpg">
     </div>
     
     ![image](neel_equation.png)
@@ -559,7 +576,7 @@ Deformable Parts Model
     Deformable Parts Model (DPM) - person
 
     <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/examples/person.png">
+      <img src="{{ site.baseurl }}/assets/images/person.png">
       <div class="figcaption">DPM - Person</div>
     </div>
     
@@ -568,7 +585,7 @@ Deformable Parts Model
     Results – Person detection
 
     <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/examples/person results.png">
+      <img src="{{ site.baseurl }}/assets/images/person results.png">
     </div>
     ![image](person results.png)
 
@@ -615,7 +632,7 @@ Deformable Parts Model
     ----------------------------------------------------------
     
     <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/examples/extension.png">
+      <img src="{{ site.baseurl }}/assets/images/extension.png">
     </div>
     
     ![image](extension.png)
