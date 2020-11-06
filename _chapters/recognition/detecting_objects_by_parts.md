@@ -17,10 +17,8 @@ of objects are in an image and *where* they are.
 
 <div class="fig figcenter fighighlight">
   <img src="{{ site.baseurl }}/assets/examples/detector.png">
-  <div class="figcaption">Put your informative caption here! If you really want to mess around with the classes in this div container then feel free, but inserting images just like this should work great!</div>
+  <div class="figcaption">Object Detection Output</div>
 </div>
-
-![Object Detection Output](detector.png "fig:") [fig:]
 
 In the image above, we see the output of an algorithm that has detected
 a person, dog, and a chair. It’s important to note that with object
@@ -47,6 +45,10 @@ objects with segmentation masks (instead of simple bounding boxes).
 Below is an sample of images from the COCO detection challenge and their
 segmentations.
 
+<div class="fig figcenter fighighlight">
+  <img src="{{ site.baseurl }}/assets/examples/coco.png">
+  <div class="figcaption">Sample images from COCO challenge</div>
+</div>
 ![Sample images from COCO challenge](coco.png "fig:") [fig:coco]
 
 Evaluation
@@ -59,15 +61,25 @@ positives** (TP), **false positives** (FP), and **false negatives**
 1.  True Positive: When the overlap with the ground truth prediction is
     greater than 50%.
 
+    <div class="fig figcenter fighighlight">
+      <img src="{{ site.baseurl }}/assets/examples/truepos.png">
+    </div>
+    
     ![image](truepos.png)
 
 2.  False Positive: When the overlap with the ground truth prediction is
     less than 50%
-
+    
+    <div class="fig figcenter fighighlight">
+      <img src="{{ site.baseurl }}/assets/examples/falsepos.png">
+    </div>
     ![image](falsepos.png)
 
 3.  False Negative: The objects that our model fails to find.
 
+    <div class="fig figcenter fighighlight">
+      <img src="{{ site.baseurl }}/assets/examples/falseneg.png">
+    </div>
     ![image](falseneg.png)
 
     (Aside: True Negative (TN) refers to areas in the image where our
@@ -110,12 +122,22 @@ Recall $= \frac{TP}{TP + FN} = \frac{1}{1 + 1} = \frac{1}{2}$
 
 Through varying threshold, we can vary precision and recall.
 
+<div class="fig figcenter fighighlight">
+      <img src="{{ site.baseurl }}/assets/examples/threshold0.png">
+      <div class="figcaption">Example with Threshold of 0</div>
+</div>
+
 ![Example with threshold of 0](threshold0.png "fig:") [fig:]
 
 When using a threshold of 0, we get a precision of
 $ \frac{2}{2 + 5} = \frac{2}{7}$ and a recall of $\frac{2}{2 + 0} = 1.$
 We can improve our precision from the by adjusting our threshold to
 $0.5$ as shown in the example below.
+
+<div class="fig figcenter fighighlight">
+      <img src="{{ site.baseurl }}/assets/examples/threshold0.5.png">
+      <div class="figcaption">Example with Threshold of 0.5</div>
+</div>
 
 ![Example with threshold of 0.5](threshold0.5.png "fig:") [fig:]
 
@@ -131,6 +153,9 @@ threshold value which allows us to compare algorithms without worrying
 about varying threshold values - here we just take into account all
 threshold values instead!
 
+<div class="fig figcenter fighighlight">
+      <img src="{{ site.baseurl }}/assets/examples/pcurve.png">
+</div>
 ![Precision-recall Curve](prcurve.png "fig:") [fig:]
 
 Siddhartha’s notes (13:00-20:00) {#siddharthas-notes-1300-2000 .unnumbered}
@@ -153,19 +178,23 @@ different algorithms and the predictions they make
     we know what threshold to use?
 
 **Comparing Algorithms**
+    
+    <div class="fig figcenter fighighlight">
+      <img src="{{ site.baseurl }}/assets/examples/Screen Shot 2020-10-28 at 11.53.27 AM.png">
+    </div>
 
-1.  ![image](Screen Shot 2020-10-28 at 11.53.27 AM.png)
+    ![image](Screen Shot 2020-10-28 at 11.53.27 AM.png)
 
-2.  In the image above we can see that when comparing the PR curves of
+1.  In the image above we can see that when comparing the PR curves of
     different algorithms, we can use metrics like area under the curve
     as a measure of better performance. A perfect prediction (in pink)
     maximizes the area under the curve.
 
-3.  Or, we might want a certain precision value, and then we would pick
+2.  Or, we might want a certain precision value, and then we would pick
     out the algorithm that has the highest recall for that given
     precision value.
 
-4.  It is important that we use this sort of metric to measure
+3.  It is important that we use this sort of metric to measure
     performance because different algorithms perform differently at
     varying precision and recall levels - not all of them are shaped the
     way they are in the above example.
@@ -194,10 +223,15 @@ This concept is similar to convolution/correlation. The difference is
 that we are employing a more sophisticated template (this time we are
 basing it on HoG features).
 
+<div class="fig figcenter fighighlight">
+  <img src="{{ site.baseurl }}/assets/examples/hogrecap.png">
+  <div class="figcaption">Finding a HoG template for a given image of a person.</div>
+</div>
+
 ![Finding a HoG template for a given image of a
 person.](hogrecap.png "fig:") [fig:hogrecap]
 
-Using Fig. [fig:hogrecap] to guide this example, we recall the
+Using the above figure to guide this example, we recall the
 visualization of extracting the HoG features of an image. In this
 example, we create a person model HoG template (far right) based on the
 input image.
@@ -222,6 +256,11 @@ size wisely. One solution is to implement the **multiscale sliding
 window**: this involves running the method above over lower resolution
 of the images. Below is a depiction about the creation of a feature
 pyramid.
+
+<div class="fig figcenter fighighlight">
+  <img src="{{ site.baseurl }}/assets/examples/featurepyramid.png">
+  <div class="figcaption">From left to right: resolution pyramid, HoG pyramid, and Filter $F$</div>
+</div>
 
 ![From left to right: resolution pyramid, HoG pyramid, and Filter
 $F$](featurepyramid.png "fig:") [fig:featurepyramid]
@@ -284,6 +323,11 @@ Deformable Parts Model
     various components like the ears and eyes to create something that
     resembles a face, as shown below:
 
+    <div class="fig figcenter fighighlight">
+    <img src="{{ site.baseurl }}/assets/examples/deformable1.png">
+    <div class="figcaption">Deformable Parts Model of Human Face Connected by Springs</div>
+    </div>
+
     ![Deformable Parts Model of Human Face Connected by
     Springs](deformable1.png "fig:") [fig:]
 
@@ -298,6 +342,12 @@ Deformable Parts Model
     connections with the yellow boxes that represent the person’s head,
     arms, etc.
 
+    <div class="fig figcenter fighighlight">
+      <img src="{{ site.baseurl }}/assets/examples/deformable2.png">
+      <img src="{{ site.baseurl }}/assets/examples/deformable3.png">
+      <div class="figcaption">Star Model and Star Model On a Person</div>
+    </div>
+
     ![image](deformable2.png) ![Star Model and Star Model On a
     Person](deformable3.png "fig:") [fig:]
 
@@ -308,6 +358,11 @@ Deformable Parts Model
     representing a person’s body and a part feature of the person’s
     face.
 
+    <div class="fig figcenter fighighlight">
+      <img src="{{ site.baseurl }}/assets/examples/deformable4.png">
+      <div class="figcaption">Global Filter and an Example of a Part Filter of Human Body and Face</div>
+    </div>
+    
     ![Global Filter and an Example of a Part Filter of Human Body and
     Face](deformable4.png "fig:") [fig:]
 
@@ -338,7 +393,12 @@ Deformable Parts Model
     visualized as an elliptical gradient. High color value corresponds
     to high cost. The farther away the part’s center is from the
     expected center, the more cost it will incur.
-
+    
+    <div class="fig figcenter fighighlight">
+      <img src="{{ site.baseurl }}/assets/examples/Deformation Model.jpg">
+      <div class="figcaption">Deformation Costs of a Standing Human</div>
+    </div>
+    
     ![Deformation Costs of a Standing Human.](Deformation Model "fig:")
     [fig:]
 
@@ -364,6 +424,12 @@ Deformable Parts Model
     relation.
 
     ![HOG Pyramid Example](HOG Pyramid "fig:") [fig:]
+    
+    <div class="fig figcenter fighighlight">
+      <img src="{{ site.baseurl }}/assets/examples/Hog Pyramid.jpg">
+      <div class="figcaption">HOG Pyramid Example</div>
+    </div>
+    
 
     Component Models
     ----------------
@@ -388,6 +454,12 @@ Deformable Parts Model
 
     ![Two Component Model from Two Views of a
     Bicycle.](TwoComponentModel "fig:") [fig:tcm]
+    
+    <div class="fig figcenter fighighlight">
+      <img src="{{ site.baseurl }}/assets/examples/TwoComponentModel.jpg">
+      <div class="figcaption">Two Component Model from Two Views of a Bicycle</div>
+    </div>
+    
 
     Neel’s notes (37-43) {#neels-notes-37-43 .unnumbered}
     ====================
@@ -419,6 +491,10 @@ Deformable Parts Model
     sums: The sum of scores for the global and part detectors minus the
     sum of the deformation costs for each part.
 
+    <div class="fig figcenter fighighlight">
+      <img src="{{ site.baseurl }}/assets/examples/neel_equation.jpg">
+    </div>
+    
     ![image](neel_equation.png)
 
     The first term sees how similar the image is to our template, and
@@ -482,10 +558,18 @@ Deformable Parts Model
 
     Deformable Parts Model (DPM) - person
 
+    <div class="fig figcenter fighighlight">
+      <img src="{{ site.baseurl }}/assets/examples/person.png">
+      <div class="figcaption">DPM - Person</div>
+    </div>
+    
     ![DPM - person](person.png "fig:") [fig:]
 
     Results – Person detection
 
+    <div class="fig figcenter fighighlight">
+      <img src="{{ site.baseurl }}/assets/examples/person results.png">
+    </div>
     ![image](person results.png)
 
     Red: best location for the root filter
@@ -529,7 +613,11 @@ Deformable Parts Model
 
     Extensions - From star shaped model to constellation model
     ----------------------------------------------------------
-
+    
+    <div class="fig figcenter fighighlight">
+      <img src="{{ site.baseurl }}/assets/examples/extension.png">
+    </div>
+    
     ![image](extension.png)
 
     So far, we have represented the parts and modeled the locations
