@@ -104,7 +104,7 @@ Recall answers the question: how many of the ground truth objects can
 the model detect?
 
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/example calculation.jpg">
+  <img src="{{ site.baseurl }}/assets/images/example calculation.png">
   <div class="figcaption">Example Precision and Recall Calculation</div>
 </div>
 
