@@ -16,7 +16,7 @@ plainly, with object detection we want to be able to tell *what* types
 of objects are in an image and *where* they are.
 
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/examples/detector.png">
+  <img src="{{ site.baseurl }}/assets/images/detector.png">
   <div class="figcaption">Object Detection Output</div>
 </div>
 In the image above, we see the output of an algorithm that has detected
