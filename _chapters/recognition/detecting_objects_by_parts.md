@@ -50,8 +50,6 @@ segmentations.
   <div class="figcaption">Sample images from COCO challenge</div>
 </div>
 
-![Sample images from COCO challenge](coco.png "fig:") [fig:coco]
-
 Evaluation
 ----------
 
@@ -65,8 +63,6 @@ positives** (TP), **false positives** (FP), and **false negatives**
     <div class="fig figcenter fighighlight">
       <img src="{{ site.baseurl }}/assets/images/truepos.png">
     </div>
-    
-    ![image](truepos.png)
 
 2.  False Positive: When the overlap with the ground truth prediction is
     less than 50%
@@ -74,16 +70,12 @@ positives** (TP), **false positives** (FP), and **false negatives**
     <div class="fig figcenter fighighlight">
       <img src="{{ site.baseurl }}/assets/images/falsepos.png">
     </div>
-    
-    ![image](falsepos.png)
 
 3.  False Negative: The objects that our model fails to find.
 
     <div class="fig figcenter fighighlight">
       <img src="{{ site.baseurl }}/assets/images/falseneg.png">
     </div>
-    
-    ![image](falseneg.png)
 
     (Aside: True Negative (TN) refers to areas in the image where our
     algorithm did not produce any prediction because there were no
@@ -95,19 +87,16 @@ equivalent ways of displaying the combination of predictions and truth
 values with distinct terminology are shown below.
 
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/table1">
-  <img src="{{ site.baseurl }}/assets/images/table2">
-  <img src="{{ site.baseurl }}/assets/images/table3">
+  <img src="{{ site.baseurl }}/assets/images/table1.jpg">
+  <div class="figcaption">Table of predictions and true values using full
+terminology</div>
+  <img src="{{ site.baseurl }}/assets/images/table2.jpg">
+  <div class="figcaption">Table of predictions and true values using abbreviated
+terminology</div>
+  <img src="{{ site.baseurl }}/assets/images/table3.jpg">
+  <div class="figcaption">Table of predictions and true values using alternate
+terminology</div>
 </div>
-
-![Table of predictions and true values using full
-terminology](table1 "fig:") [fig:]
-
-![Table of predictions and true values using abbreviated
-terminology](table2 "fig:") [fig:]
-
-![Table of predictions and true values using alternate
-terminology](table3 "fig:") [fig:]
 
 Utilizing the terminology from Figure 3 above, we can compute
 **precision** and **recall**.
@@ -122,9 +111,6 @@ $$Recall = \frac{TP}{TP + FN}$$
 Recall answers the question: how many of the ground truth objects can
 the model detect?
 
-![Example precision and recall calculation](example calculation "fig:")
-[fig:]
-
 <div class="fig figcenter fighighlight">
   <img src="{{ site.baseurl }}/assets/images/example calculation.jpg">
   <div class="figcaption">Example Precision and Recall Calculation</div>
@@ -137,16 +123,9 @@ Recall $= \frac{TP}{TP + FN} = \frac{1}{1 + 1} = \frac{1}{2}$
 Through varying threshold, we can vary precision and recall.
 
 <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/examples/threshold0.png">
-      <div class="figcaption">Example with Threshold of 0</div>
-</div>
-
-<div class="fig figcenter fighighlight">
   <img src="{{ site.baseurl }}/assets/images/threshold0.png">
   <div class="figcaption">Example with Threshold 0</div>
 </div>
-
-![Example with threshold of 0](threshold0.png "fig:") [fig:]
 
 When using a threshold of 0, we get a precision of
 $ \frac{2}{2 + 5} = \frac{2}{7}$ and a recall of $\frac{2}{2 + 0} = 1.$
@@ -157,8 +136,6 @@ $0.5$ as shown in the example below.
       <img src="{{ site.baseurl }}/assets/images/threshold0.5.png">
       <div class="figcaption">Example with Threshold of 0.5</div>
 </div>
-
-![Example with threshold of 0.5](threshold0.5.png "fig:") [fig:]
 
 Now, we achieve a precision of $ \frac{1}{1 + 2} = \frac{1}{3}$ and a
 recall of $\frac{1}{1 + 1} = \frac{1}{2}$.
@@ -175,8 +152,6 @@ threshold values instead!
 <div class="fig figcenter fighighlight">
       <img src="{{ site.baseurl }}/assets/images/pcurve.png">
 </div>
-
-![Precision-recall Curve](prcurve.png "fig:") [fig:]
 
 Siddhartha’s notes (13:00-20:00) {#siddharthas-notes-1300-2000 .unnumbered}
 ================================
@@ -202,8 +177,6 @@ different algorithms and the predictions they make
 <div class="fig figcenter fighighlight">
   <img src="{{ site.baseurl }}/assets/images/Screen Shot 2020-10-28 at 11.53.27 AM.png">
 </div>
-
-    ![image](Screen Shot 2020-10-28 at 11.53.27 AM.png)
 
 1.  In the image above we can see that when comparing the PR curves of
     different algorithms, we can use metrics like area under the curve
@@ -248,9 +221,6 @@ basing it on HoG features).
   <div class="figcaption">Finding a HoG template for a given image of a person.</div>
 </div>
 
-![Finding a HoG template for a given image of a
-person.](hogrecap.png "fig:") [fig:hogrecap]
-
 Using the above figure to guide this example, we recall the
 visualization of extracting the HoG features of an image. In this
 example, we create a person model HoG template (far right) based on the
@@ -281,9 +251,6 @@ pyramid.
   <img src="{{ site.baseurl }}/assets/images/featurepyramid.png">
   <div class="figcaption">From left to right: resolution pyramid, HoG pyramid, and Filter $F$</div>
 </div>
-
-![From left to right: resolution pyramid, HoG pyramid, and Filter
-$F$](featurepyramid.png "fig:") [fig:featurepyramid]
 
 The image above represents the following procedure:
 
@@ -348,9 +315,6 @@ Deformable Parts Model
       <div class="figcaption">Deformable Parts Model of Human Face Connected by Springs</div>
     </div>
 
-    ![Deformable Parts Model of Human Face Connected by
-    Springs](deformable1.png "fig:") [fig:]
-
 2.  Specifically, by capturing specific features of a particular piece
     like the hair and linking it with another piece, the DPM can detect
     not only based off of HOG features, but also with a sense of spatial
@@ -368,9 +332,6 @@ Deformable Parts Model
       <div class="figcaption">Star Model and Star Model On a Person</div>
     </div>
 
-    ![image](deformable2.png) ![Star Model and Star Model On a
-    Person](deformable3.png "fig:") [fig:]
-
 3.  As such, these models have a global (anchor) filter and a set of
     part filters. To better understand the features of each part, the
     part filters will be at a higher resolution to better capture the
@@ -382,9 +343,6 @@ Deformable Parts Model
       <img src="{{ site.baseurl }}/assets/images/deformable4.png">
       <div class="figcaption">Global Filter and an Example of a Part Filter of Human Body and Face</div>
     </div>
-    
-    ![Global Filter and an Example of a Part Filter of Human Body and
-    Face](deformable4.png "fig:") [fig:]
 
     Cole’s notes (31-37) {#coles-notes-31-37 .unnumbered}
     ====================
@@ -418,9 +376,6 @@ Deformable Parts Model
       <img src="{{ site.baseurl }}/assets/images/Deformation Model.jpg">
       <div class="figcaption">Deformation Costs of a Standing Human</div>
     </div>
-    
-    ![Deformation Costs of a Standing Human.](Deformation Model "fig:")
-    [fig:]
 
     If we examine the head deformations model in the figure above, we
     see that it takes the shape of a horizontal ellipse. This coincides
@@ -442,15 +397,12 @@ Deformable Parts Model
     pyramid when storing root positions of each object and its parts so
     that the final bounding boxes can be drawn to accurate scale and
     relation.
-
-    ![HOG Pyramid Example](HOG Pyramid "fig:") [fig:]
     
     <div class="fig figcenter fighighlight">
       <img src="{{ site.baseurl }}/assets/images/Hog Pyramid.jpg">
       <div class="figcaption">HOG Pyramid Example</div>
     </div>
     
-
     Component Models
     ----------------
 
@@ -466,21 +418,17 @@ Deformable Parts Model
     on their heads. If using this model returns a high score, the object
     can simply be classified as a human.
 
-    Figure [fig:tcm] refers to the more practical example of a two
+    The figure below refers to the more practical example of a two
     component bicycle model. The upper filters and allowable part
     locations depict a side-view while the lower one picture a frontal
     view of a bike. These filters will both classify as \`\`bicycle"
     despite having vastly different appearances.
-
-    ![Two Component Model from Two Views of a
-    Bicycle.](TwoComponentModel "fig:") [fig:tcm]
     
     <div class="fig figcenter fighighlight">
       <img src="{{ site.baseurl }}/assets/examples/TwoComponentModel.jpg">
       <div class="figcaption">Two Component Model from Two Views of a Bicycle</div>
     </div>
     
-
     Neel’s notes (37-43) {#neels-notes-37-43 .unnumbered}
     ====================
 
@@ -514,8 +462,6 @@ Deformable Parts Model
     <div class="fig figcenter fighighlight">
       <img src="{{ site.baseurl }}/assets/images/neel_equation.jpg">
     </div>
-    
-    ![image](neel_equation.png)
 
     The first term sees how similar the image is to our template, and
     the second term makes sure that the parts are where they’re supposed
@@ -582,15 +528,12 @@ Deformable Parts Model
       <img src="{{ site.baseurl }}/assets/images/person.png">
       <div class="figcaption">DPM - Person</div>
     </div>
-    
-    ![DPM - person](person.png "fig:") [fig:]
 
     Results – Person detection
 
     <div class="fig figcenter fighighlight">
       <img src="{{ site.baseurl }}/assets/images/person results.png">
     </div>
-    ![image](person results.png)
 
     Red: best location for the root filter
 
@@ -637,8 +580,6 @@ Deformable Parts Model
     <div class="fig figcenter fighighlight">
       <img src="{{ site.baseurl }}/assets/images/extension.png">
     </div>
-    
-    ![image](extension.png)
 
     So far, we have represented the parts and modeled the locations
     relative to a single root part. Which is represented as the “Star”
