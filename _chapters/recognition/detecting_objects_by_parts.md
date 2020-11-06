@@ -19,7 +19,6 @@ of objects are in an image and *where* they are.
   <img src="{{ site.baseurl }}/assets/examples/detector.png">
   <div class="figcaption">Object Detection Output</div>
 </div>
-
 In the image above, we see the output of an algorithm that has detected
 a person, dog, and a chair. It’s important to note that with object
 detection we are not interested in identifying specific instances of
