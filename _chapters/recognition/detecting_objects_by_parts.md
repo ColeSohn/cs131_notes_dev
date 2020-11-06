@@ -87,15 +87,7 @@ equivalent ways of displaying the combination of predictions and truth
 values with distinct terminology are shown below.
 
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/assets/images/table1.png">
-  <div class="figcaption">Table of predictions and true values using full
-terminology</div>
-  <img src="{{ site.baseurl }}/assets/images/table2.png">
-  <div class="figcaption">Table of predictions and true values using abbreviated
-terminology</div>
-  <img src="{{ site.baseurl }}/assets/images/table3.png">
-  <div class="figcaption">Table of predictions and true values using alternate
-terminology</div>
+  <img src="{{ site.baseurl }}/assets/images/tables.png">
 </div>
 
 Utilizing the terminology from Figure 3 above, we can compute
