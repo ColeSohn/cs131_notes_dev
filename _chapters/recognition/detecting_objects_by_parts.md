@@ -16,7 +16,7 @@ plainly, with object detection we want to be able to tell *what* types
 of objects are in an image and *where* they are.
 
 <div class="fig figcenter fighighlight">
-  <img src="{{ site.baseurl }}/detector.png">
+  <img src="https://colesohn.github.io/cs131_notes_dev/recognition/detector.png">
   <div class="figcaption">Put your informative caption here! If you really want to mess around with the classes in this div container then feel free, but inserting images just like this should work great!</div>
 </div>
 
