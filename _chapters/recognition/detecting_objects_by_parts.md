@@ -367,7 +367,7 @@ Deformable Parts Model
     rate than the head. This also holds true to reality as we expect the
     head position to vary greatly with respect to the abdomen. If thighs
     are detected not directly below the abdomen, however, the object is
-    unlikely to be a standing human.\
+    unlikely to be a standing human.
 
     It is important to remember that variations in camera position lead
     to perceived variations of objects’ scale. We can account for this
