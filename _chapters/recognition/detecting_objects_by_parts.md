@@ -15,6 +15,10 @@ from various categories, such as people, animals, objects, etc. More
 plainly, with object detection we want to be able to tell *what* types
 of objects are in an image and *where* they are.
 
+<div class="fig figcenter fighighlight">
+  <img src="{{ site.baseurl }}/detector.png">
+  <div class="figcaption">Put your informative caption here! If you really want to mess around with the classes in this div container then feel free, but inserting images just like this should work great!</div>
+</div>
 ![Object Detection Output](detector.png "fig:") [fig:]
 
 In the image above, we see the output of an algorithm that has detected
