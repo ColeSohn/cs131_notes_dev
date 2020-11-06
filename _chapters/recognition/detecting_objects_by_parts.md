@@ -142,7 +142,7 @@ about varying threshold values - here we just take into account all
 threshold values instead!
 
 <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/images/pcurve.png">
+      <img src="{{ site.baseurl }}/assets/images/prcurve.png">
 </div>
 
 Now we need a metric by which we can measure the performance of
