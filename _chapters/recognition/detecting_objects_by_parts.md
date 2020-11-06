@@ -1,7 +1,7 @@
 ---
 title: Detecting Objects by Parts
 keywords: (insert comma-separated keywords here)
-order: 13 # Lecture number for 2020
+order: 14 # Lecture number for 2020
 ---
 
 Object Detection: Task & Evaluation
