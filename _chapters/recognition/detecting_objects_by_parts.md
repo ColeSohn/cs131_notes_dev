@@ -425,7 +425,7 @@ Deformable Parts Model
     despite having vastly different appearances.
     
     <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/examples/TwoComponentModel.jpg">
+      <img src="{{ site.baseurl }}/assets/examples/TwoComponentModel.png">
       <div class="figcaption">Two Component Model from Two Views of a Bicycle</div>
     </div>
     
