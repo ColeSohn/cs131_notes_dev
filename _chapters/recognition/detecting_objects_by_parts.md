@@ -379,7 +379,7 @@ Deformable Parts Model
     relation.
     
     <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/images/HOG Pyramid.jpg">
+      <img src="{{ site.baseurl }}/assets/images/HOG Pyramid.png">
       <div class="figcaption">HOG Pyramid Example</div>
     </div>
     
@@ -437,7 +437,7 @@ Deformable Parts Model
     sum of the deformation costs for each part.
 
     <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/images/neel_equation.jpg">
+      <img src="{{ site.baseurl }}/assets/images/neel_equation.png">
     </div>
 
     The first term sees how similar the image is to our template, and
