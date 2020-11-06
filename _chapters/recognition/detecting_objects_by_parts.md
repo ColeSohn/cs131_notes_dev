@@ -145,9 +145,6 @@ threshold values instead!
       <img src="{{ site.baseurl }}/assets/images/pcurve.png">
 </div>
 
-Siddhartha’s notes (13:00-20:00) {#siddharthas-notes-1300-2000 .unnumbered}
-================================
-
 Now we need a metric by which we can measure the performance of
 different algorithms and the predictions they make
 
@@ -194,9 +191,6 @@ different algorithms and the predictions they make
     is not precise and the output didn’t have enough overlap with the
     ground truth- for example, if there are many people bunched
     together, our prediction may not be as good.
-
-Rebecca’s notes (20-25) {#rebeccas-notes-20-25 .unnumbered}
-=======================
 
 Dalal-Triggs Window
 ===================
@@ -270,9 +264,6 @@ similarity between the HoG template and the HoG pyramid. Therefore,
 every time we receive a high score, we declare that there is a detected
 object.
 
-Peter’s notes (25:00-31:00) {#peters-notes-2500-3100 .unnumbered}
-===========================
-
 Deformable Parts Model
 ======================
 
@@ -335,9 +326,6 @@ Deformable Parts Model
       <img src="{{ site.baseurl }}/assets/images/deformable4.png">
       <div class="figcaption">Global Filter and an Example of a Part Filter of Human Body and Face</div>
     </div>
-
-    Cole’s notes (31-37) {#coles-notes-31-37 .unnumbered}
-    ====================
 
     Deformations Costs
     ------------------
@@ -420,9 +408,6 @@ Deformable Parts Model
       <img src="{{ site.baseurl }}/assets/examples/TwoComponentModel.png">
       <div class="figcaption">Two Component Model from Two Views of a Bicycle</div>
     </div>
-    
-    Neel’s notes (37-43) {#neels-notes-37-43 .unnumbered}
-    ====================
 
     Explanation of Terminology for Each Detection
     ---------------------------------------------
@@ -468,9 +453,6 @@ Deformable Parts Model
 
     ​3. Apply the filters and find the response at each location in the
     image
-
-    Neval’s notes (43-49) {#nevals-notes-43-49 .unnumbered}
-    =====================
 
     ### Accounting for Spatial Cost with a Transformation 
 
