@@ -90,7 +90,7 @@ values with distinct terminology are shown below.
   <img src="{{ site.baseurl }}/assets/images/tables.png">
 </div>
 
-Utilizing the terminology from Figure 3 above, we can compute
+Utilizing the terminology from the second table above, we can compute
 **precision** and **recall**.
 
 $$Precision = \frac{TP}{TP + FP}$$
