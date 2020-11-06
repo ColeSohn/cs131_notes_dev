@@ -379,7 +379,7 @@ Deformable Parts Model
     relation.
     
     <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/images/Hog Pyramid.jpg">
+      <img src="{{ site.baseurl }}/assets/images/HOG Pyramid.jpg">
       <div class="figcaption">HOG Pyramid Example</div>
     </div>
     
@@ -405,7 +405,7 @@ Deformable Parts Model
     despite having vastly different appearances.
     
     <div class="fig figcenter fighighlight">
-      <img src="{{ site.baseurl }}/assets/examples/TwoComponentModel.png">
+      <img src="{{ site.baseurl }}/assets/images/TwoComponentModel.png">
       <div class="figcaption">Two Component Model from Two Views of a Bicycle</div>
     </div>
 
