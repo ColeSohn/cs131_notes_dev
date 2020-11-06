@@ -74,6 +74,7 @@ positives** (TP), **false positives** (FP), and **false negatives**
     <div class="fig figcenter fighighlight">
       <img src="{{ site.baseurl }}/assets/images/falsepos.png">
     </div>
+    
     ![image](falsepos.png)
 
 3.  False Negative: The objects that our model fails to find.
@@ -81,6 +82,7 @@ positives** (TP), **false positives** (FP), and **false negatives**
     <div class="fig figcenter fighighlight">
       <img src="{{ site.baseurl }}/assets/images/falseneg.png">
     </div>
+    
     ![image](falseneg.png)
 
     (Aside: True Negative (TN) refers to areas in the image where our
@@ -173,6 +175,7 @@ threshold values instead!
 <div class="fig figcenter fighighlight">
       <img src="{{ site.baseurl }}/assets/images/pcurve.png">
 </div>
+
 ![Precision-recall Curve](prcurve.png "fig:") [fig:]
 
 Siddhartha’s notes (13:00-20:00) {#siddharthas-notes-1300-2000 .unnumbered}
@@ -341,8 +344,8 @@ Deformable Parts Model
     resembles a face, as shown below:
 
     <div class="fig figcenter fighighlight">
-    <img src="{{ site.baseurl }}/assets/images/deformable1.png">
-    <div class="figcaption">Deformable Parts Model of Human Face Connected by Springs</div>
+      <img src="{{ site.baseurl }}/assets/images/deformable1.png">
+      <div class="figcaption">Deformable Parts Model of Human Face Connected by Springs</div>
     </div>
 
     ![Deformable Parts Model of Human Face Connected by
